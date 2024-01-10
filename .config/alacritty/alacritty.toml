@@ -1,0 +1,15 @@
+[font]
+size = 14
+
+[font.bold]
+family = "JetBrains Mono"
+
+[font.italic]
+family = "JetBrains Mono"
+
+[font.normal]
+family = "JetBrains Mono"
+
+[window]
+dynamic_padding = true
+opacity = 0.85
