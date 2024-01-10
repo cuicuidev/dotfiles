@@ -7,8 +7,8 @@ xrandr --dpi 124 & # set large font size
 sudo systemctl start NetworkManager.service & # Connect to the ethernet
 
 wal -i $(cat ~/.cache/wal/wal) & # set the wallpaper
-#dwmblocks & # start the dwmblocks scripts
-#discord --start-minimized & # run Discord in the background
+dwmblocks & # start the dwmblocks scripts
+discord --start-minimized & # run Discord in the background
 picom & # start picom
 
 exec dwm # start Suckless' DWM
