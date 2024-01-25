@@ -6,6 +6,8 @@ vim.cmd("set tabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set expandtab")
 vim.cmd("set autoindent")
-vim.g.mapleader = " "
 
 vim.cmd("map <C-n> :Neotree toggle<CR>")
+
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme catppuccin]])
