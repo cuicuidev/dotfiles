@@ -12,7 +12,7 @@ BASEDIR: str = os.path.dirname(os.path.abspath(__file__))
 print(BASEDIR)
 
 def ignore(file: str) -> bool:
-    ignore = [".git", ".gitignore", "README.md", "venv", "setup.py"]
+    ignore = [".git", ".gitignore", "README.md", "venv", "setup.py", "__pycache__", "colors.py"]
     if os.path.basename(file) in ignore:
         return True
     return False
