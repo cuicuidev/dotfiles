@@ -17,6 +17,7 @@ return {
                     "taplo",
                     "tsserver",
                     "pyright",
+                    "zls"
                 },
             })
         end,
@@ -32,6 +33,7 @@ return {
             lspconfig.taplo.setup({})
             lspconfig.pyright.setup({})
             lspconfig.tsserver.setup({})
+            lspconfig.zls.setup({})
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
