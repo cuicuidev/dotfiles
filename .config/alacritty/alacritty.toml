@@ -2,14 +2,19 @@
 size = 14
 
 [font.bold]
-family = "JetBrains Mono"
+family = "JetBrainsMono Nerd Font"
+style = "bold"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "JetBrainsMono Nerd Font"
 
 [font.normal]
-family = "JetBrains Mono"
+family = "JetBrainsMono Nerd Font"
+style = "regular"
 
 [window]
 dynamic_padding = true
 opacity = 0.85
+
+[shell]
+program = "/usr/bin/zsh"
