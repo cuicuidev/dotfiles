@@ -89,6 +89,9 @@ alias syu="sudo pacman -Syu"
 # Zig aliases
 alias zigdev="~/src/zig_dev/zig"
 
+# Anaconda aliases
+alias conda="~/anaconda3/bin/conda"
+
 # Export locale settings
 export LC_ALL=C.UTF-8
 export LANG=en_US.UTF-8
