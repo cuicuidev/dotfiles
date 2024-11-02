@@ -1,3 +1,18 @@
+# Run startx at login on tty1
+if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]
+then
+    startx
+fi
+
+# Run Hyprland at login on tty2
+if [[ -z $DISPLAY && $XDG_VTNR -eq 2 ]]
+then
+    Hyprland
+fi
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -58,14 +73,21 @@ eval "$(zoxide init --cmd cd zsh)"
 
 ########### END
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
 # Alias definitions
 alias ls='lsd --color=auto'
 alias grep='grep --color=auto'
 alias shut='sudo shutdown now'
 alias rb='sudo reboot'
+
+# Docker aliases
+alias docker-ip="sudo docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
+
+# Pacman aliases
+alias syu="sudo pacman -Syu"
+
+# Zig aliases
+alias zigdev="~/src/zig_dev/zig"
 
 # Export locale settings
 export LC_ALL=C.UTF-8

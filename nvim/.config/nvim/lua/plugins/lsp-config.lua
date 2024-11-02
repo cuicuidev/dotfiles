@@ -17,7 +17,7 @@ return {
                     "taplo",
                     "tsserver",
                     "pyright",
-                    "zls"
+                    "zls",
                 },
             })
         end,

@@ -16,5 +16,7 @@ style = "regular"
 dynamic_padding = true
 opacity = 0.85
 
-[shell]
+[terminal]
+
+[terminal.shell]
 program = "/usr/bin/zsh"
