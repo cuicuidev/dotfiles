@@ -90,7 +90,7 @@ alias syu="sudo pacman -Syu"
 alias zigdev="~/src/zig_dev/zig"
 
 # Anaconda aliases
-alias conda="~/anaconda3/bin/conda"
+export PATH=~/anaconda3/bin:${PATH}
 
 # Export locale settings
 export LC_ALL=C.UTF-8
