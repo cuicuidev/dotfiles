@@ -10,4 +10,4 @@ vim.cmd("set autoindent")
 vim.cmd("map <C-n> :Neotree toggle<CR>")
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd([[colorscheme pywal16]])
