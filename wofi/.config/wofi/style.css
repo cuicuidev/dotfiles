@@ -1,0 +1,31 @@
+* {
+    border-radius: 5px;
+}
+
+window {
+    font-size: 20px;
+    font-family: JetBrainsMono Nerd Font;
+    background-color: rgba(0,0,0,0.75);
+    color: aliceblue;
+}
+
+#entry {
+    margin: 10px;
+    border-radius: 0px;
+}
+
+#entry:selected {
+    background-color: aliceblue;
+    color: rgba(0,0,0,0.9);
+}
+
+#text:selected {
+    color: rgba(0,0,0,0.9)
+}
+
+#input {
+    background-color: rgba(50,50,50,0.5);
+    color: aliceblue;
+    margin: 10px;
+    border-radius: 0px;
+}

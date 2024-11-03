@@ -66,9 +66,25 @@ cs() {
     # Find the closest venv in the new directory
     venv_path=$(find_venv "$PWD")
     if [[ -n "$venv_path" ]]; then
-        source "$venv_path/bin/activate"
+# source "$venv_path/bin/activate"  # commented out by conda initialize
     fi
 }
 
 # Alias the function
 alias cd='cs'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/cuicui/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/cuicui/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/cuicui/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/cuicui/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
