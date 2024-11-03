@@ -7,7 +7,7 @@ import argparse
 HOME = os.getenv("HOME")
 
 WALLPAPER_FOLDER = os.path.join(HOME, ".wallpapers")  # type: ignore
-STATE_FILE = os.path.join(HOME, "state.json")  # type: ignore
+STATE_FILE = os.path.join(WALLPAPER_FOLDER, "state.json")  # type: ignore
 
 def get_wallpapers(folder):
     wallpapers = [f for f in os.listdir(folder) if f.endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif'))]
